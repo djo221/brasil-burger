@@ -7,12 +7,8 @@ const routes: Routes = [
   {
     path: '', loadChildren: () => import('./client/client.module')
      .then( m => m.ClientModule) // on a chargé toute les routes depuis client-routing.module.ts
-  },
-
-  {
-    path: '**' , component: NotFoundComponent
   }
-  
+
 ];
 
 @NgModule({

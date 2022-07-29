@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Microbe&family=Mochiy+Pop+One&display=swap');
+
+
+.hero {
+  background-image: url('/assets/img/header-home-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.title-promotion
+{
+ font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.button{
+  margin-top: 2em;
+}
+
+.middle-text-home{
+  padding-top: 2em;
+}
+
+
+
+

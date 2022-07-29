@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+  --main-bg-color: blue;
+}
+
+
+.section {
+ /*  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  background-color:  #E5E5E5;
+}
+
+.title {
+  font-family: 'Bungee Inline', cursive;
+  position: absolute;
+  left: 39%;
+
+}
+
+.row-info {
+
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 2px solid;
+
+}
+
+.image-details-commande {
+  transform: scale(1.2);
+}
+
+.description-information {
+  padding: 2em;
+}
+
+/* .middle-information {
+
+
+} */
+
+.price-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+
+.prix-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  padding: 3em;
+
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+
+}
+.bouton-ajouter-panier{
+  margin-top: -1em;
+}

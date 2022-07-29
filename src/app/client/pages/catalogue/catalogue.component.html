@@ -1,0 +1,38 @@
+{{produits$|async|json}}
+
+<div class="wrapper d-flex align-items-stretch">
+  <nav id="sidebar" class="bg-danger">
+    <div class="custom-menu">
+      <button type="button" id="sidebarCollapse" class="btn btn-primary">
+        <i class="fa fa-bars"></i>
+        <span class="sr-only">Toggle Menu</span>
+      </button>
+    </div>
+
+    <ul class="list-unstyled components mb-5">
+      <li class="active">
+        <a><span class="fa fa-home mr-3 is-size-3"></span> NOTRE CARTE</a>
+      </li>
+      <li class="active">
+        <a><span class="fa fa-user mr-3 is-size-3"></span>MENU</a>
+      </li>
+      <li class="active">
+        <a><span class="fa fa-sticky-note mr-3 is-size-3 "></span>BURGERS</a>
+      </li>
+      <li>
+        <a><span class="fa fa-sticky-note mr-3 is-size-3 "></span>BOISSONS</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Page Content  -->
+  <div id="content" class="p-md-5">
+    <div class="text-catalogue">
+      <h1>CATALOGUE</h1>
+      <h4>Aucune excuse, faites-vous plaisir : il y en a pour tous les goûts !</h4>
+    </div>
+
+    <lister-catalogue></lister-catalogue>
+
+  </div>
+</div>

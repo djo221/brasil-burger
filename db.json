@@ -1,0 +1,132 @@
+{
+  "produits":{
+
+      "burger": [
+        {
+          "id": 1,
+          "title": "burger simpme",
+          "prix": 1200,
+          "description" : "burger simple "
+        },
+        {
+          "id": 2,
+          "title": "burger cheessse",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 3,
+          "title": "burger viande lapin",
+          "prix": 1200,
+          "description" : "burger lapinou "
+        },
+        {
+          "id": 4,
+          "title": "burger viande chevre",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 5,
+          "title": "burger viande boeuf",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 6,
+          "title": "burger de hyene",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 7,
+          "title": "burger de chat",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 8,
+          "title": "burger de girafe",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 9,
+          "title": "burger de chien",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 10,
+          "title": "burger viande de porc",
+          "prix": 1200,
+          "description" : "burger cheese "
+        }
+
+      ],
+      "menu": [
+        {
+          "id": 1,
+          "title": "menu simpme",
+          "prix": 1200,
+          "description" : "burger simple "
+        },
+        {
+          "id": 2,
+          "title": "menu cheessse",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 3,
+          "title": "menu viande lapin",
+          "prix": 1200,
+          "description" : "burger lapinou "
+        },
+        {
+          "id": 4,
+          "title": "menu viande chevre",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 5,
+          "title": "menu viande boeuf",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 6,
+          "title": "menu de hyene",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 7,
+          "title": "menu de chat",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 8,
+          "title": "menu de girafe",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 9,
+          "title": "menu de chien",
+          "prix": 1200,
+          "description" : "burger cheese "
+        },
+        {
+          "id": 10,
+          "title": "menu viande de porc",
+          "prix": 1200,
+          "description" : "burger cheese "
+        }
+
+      ]
+
+  }
+}
