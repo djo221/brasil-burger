@@ -1,10 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Observable , of } from 'rxjs';
-import { Post } from '../../shared/models/post';
-import { ProduitService } from '../../shared/services/produit.service';
+
 
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import { BurgerApiService } from '../../shared/services/burger-api.service';
+import { Catalogue } from '../../shared/models/catalogue';
 
 @Component({
   selector: 'app-home',
@@ -14,14 +14,18 @@ import { BurgerApiService } from '../../shared/services/burger-api.service';
 
 export class HomeComponent implements OnInit {
 
-  posts$ : Observable<Post[]> | null = null
+  produits$ : Observable<Catalogue>|null = null
+
+
+
+/*   posts$ : Observable<Post[]> | null = null */
 
   constructor(  private http: HttpClient , public burgerApiService: BurgerApiService) { }
 
   title = 'api-angular';
 
   ngOnInit(): void {
-    
+
 
     /* //call api exterieur (rapidapi pour burger)
     let headers = new HttpHeaders({

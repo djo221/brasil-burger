@@ -1,5 +1,3 @@
-{{produits$|async|json}}
-
 <div class="wrapper d-flex align-items-stretch">
   <nav id="sidebar" class="bg-danger">
     <div class="custom-menu">
@@ -32,7 +30,7 @@
       <h4>Aucune excuse, faites-vous plaisir : il y en a pour tous les goûts !</h4>
     </div>
 
-    <lister-catalogue></lister-catalogue>
+    <lister-catalogue [produits]="catalogue?.produits" ></lister-catalogue>
 
   </div>
 </div>

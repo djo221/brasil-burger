@@ -7,7 +7,17 @@ const routes: Routes = [
   {
     path: '', loadChildren: () => import('./client/client.module')
      .then( m => m.ClientModule) // on a chargé toute les routes depuis client-routing.module.ts
+  },
+  
+  {
+    path: 'admin', loadChildren: () => import('./admin/admin.module')
+     .then( m => m.AdminModule)
+  },
+
+  {
+    path: '**' , component: NotFoundComponent
   }
+
 
 ];
 
