@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Observable , of } from 'rxjs';
 import { Catalogue } from '../../shared/models/catalogue';
 import { CatalogueService } from '../../shared/services/catalogue.service';
+import { Router } from '@angular/router'
+import { Produit } from '../../shared/models/produit';
 
 
 @Component({
@@ -11,14 +12,25 @@ import { CatalogueService } from '../../shared/services/catalogue.service';
 })
 export class CatalogueComponent implements OnInit {
 
-   catalogue : Catalogue|undefined
+  catalogue: Produit[] | undefined
 
-   constructor(private CatalogueService : CatalogueService) { }
 
-   ngOnInit(): void {
+  constructor(private CatalogueService: CatalogueService, private router: Router) { }
 
-    this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data)
 
-   }
+
+  ngOnInit(): void {
+   /*  this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data ) */
+    this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data?.produits )
+    //this.product = data.produits
+  }
+
+
+  goTopage(type: string) {
+    //this.router.navigate([`${pageName}`]);
+
+    this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data?.produits?.filter(prod => prod.type == type) )
+
+  }
 
 }

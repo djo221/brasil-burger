@@ -10,7 +10,6 @@ import { CatalogueService } from '../../shared/services/catalogue.service';
 })
 export class SectionListerComponent implements OnInit {
 
-/*   produits$ : Observable<Catalogue>|null = null */
 
   @Input()  produits:Produit[]|undefined=[]
 
@@ -19,9 +18,6 @@ export class SectionListerComponent implements OnInit {
   constructor(private serv:CatalogueService) { }
 
   ngOnInit(): void {
-
- /*    this.produits = this.serv.getCatalogue() */
-    // console.log(this.produits$)
   }
 
 }

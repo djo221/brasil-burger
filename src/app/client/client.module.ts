@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DetailsComponent } from './pages/details/details.component';
 import { ClientRoutingModule } from './client-routing.module';
 import { NotFoundComponent } from './not-found/not-found.component';
-import { LayoutModule } from '../layout/layout.module';
+
 
 import { AsideComponent } from './components/aside/aside.component';
 import { CardComponent } from './components/card/card.component';
@@ -41,9 +41,7 @@ import { CfooterComponent } from './cfooter/cfooter.component';
   imports: [
     CommonModule,
     ClientRoutingModule,
-    LayoutModule,
-
-    HttpClientModule // on ajouter l'appel à l'API dans n'importe quel composant de l'application
+    HttpClientModule // ajouter l'appel à l'API dans n'importe quel composant de l'application
   ]
 })
 export class ClientModule { }

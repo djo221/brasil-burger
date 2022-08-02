@@ -6,10 +6,15 @@ export const environment = {
   production: false,
   API_URL: 'https://burgers1.p.rapidapi.com/burgers',
   API_KEY: '16bf3be1d1msh32cfc0edbc754d8p1251e0jsnabe1ace1e839',
-  API_HOST: 'burgers1.p.rapidapi.com'
+  API_HOST: 'burgers1.p.rapidapi.com',
+
+  CATALOGUE_URL: "http://localhost:3000/catalogue",
+  DETAIL_URL: "http://localhost:3000/detail",
+  PANIER_URL: "",
 
 
-  
+
+
 
 };
 

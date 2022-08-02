@@ -1,10 +1,13 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Observable , of } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 
-import {HttpClient, HttpHeaders} from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BurgerApiService } from '../../shared/services/burger-api.service';
 import { Catalogue } from '../../shared/models/catalogue';
+import { Produit } from '../../shared/models/produit';
+import { CatalogueService } from '../../shared/services/catalogue.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -14,13 +17,23 @@ import { Catalogue } from '../../shared/models/catalogue';
 
 export class HomeComponent implements OnInit {
 
-  produits$ : Observable<Catalogue>|null = null
+  //produits$: Observable<Catalogue> | null = null
+
+  catalogue: Catalogue | undefined
+
+  product: any
 
 
 
-/*   posts$ : Observable<Post[]> | null = null */
+  /*   posts$ : Observable<Post[]> | null = null */
 
-  constructor(  private http: HttpClient , public burgerApiService: BurgerApiService) { }
+  constructor(
+    private http: HttpClient,
+    public burgerApiService: BurgerApiService,
+    private CatalogueService: CatalogueService,
+    private Router: Router
+  ) { }
+
 
   title = 'api-angular';
 
@@ -39,9 +52,14 @@ export class HomeComponent implements OnInit {
       .subscribe(data => {
         console.log(data);
       }); */
-  }// end ngOninit
 
 
+      this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data)
+    }// end ngOninit
+
+
+
+  //fonction api exterieur
   getBurger(): any {
     this.burgerApiService.getBurger().subscribe(
       data => {
@@ -51,5 +69,13 @@ export class HomeComponent implements OnInit {
       }
     )
   }
+
+  
+
+
+
+
+
+
 
 }

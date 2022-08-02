@@ -6,3 +6,31 @@
 </div>
 
 pour
+
+
+ this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data?.produits )
+//catalogue filtre
+
+ export class CatalogueComponent implements OnInit {
+
+  catalogue: Produit[] | undefined
+
+  product: any
+
+  constructor(private CatalogueService: CatalogueService, private router: Router) { }
+
+
+
+  ngOnInit(): void {
+   /*  this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data ) */
+    this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data?.produits )
+    //this.product = data.produits
+  }
+
+
+  goTopage(type: string) {
+    //this.router.navigate([`${pageName}`]);
+
+    this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data?.produits?.filter(prod => prod.type == type) )
+
+  }

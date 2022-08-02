@@ -5,14 +5,13 @@ import { UDeleteComponent } from './u-delete/u-delete.component';
 import { UEditComponent } from './u-edit/u-edit.component';
 import { UIndexComponent } from './u-index/u-index.component';
 
-
-
-
 const routes: Routes = [
-  { path : '' , component: UIndexComponent },
-  { path : 'edit/:id' , component: UEditComponent },
-  { path : 'add' , component: UAddComponent },
-  { path : 'delete/:id' , component: UDeleteComponent }
+
+  { path: '', component: UIndexComponent }, // ici ça veut dire qu'on a /admin/user
+  { path: 'edit/:id', component: UEditComponent }, // on aura des parametres ici ( a chaque que je recois qlq chose il sera dans la variable id)
+  { path: 'add', component: UAddComponent },
+  { path: 'delete', component: UDeleteComponent } //on aura des parametres ici ( a chaque que je recois qlq chose il sera dans la variable id)
+
 ];
 
 @NgModule({

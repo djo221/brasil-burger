@@ -3,4 +3,5 @@ export interface Produit {
   nom:string
   image:string
   prix?:number
+  type?: string
 }

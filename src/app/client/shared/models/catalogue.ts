@@ -1,8 +1,7 @@
 import { Produit } from "./produit";
 
 export interface Catalogue {
-
-  menu: Produit[]
-  burger: Produit[]
-  produits: Produit[]
+  menu?: Produit[]
+  burger?: Produit[]
+  produits?: Produit[]
 }

@@ -11,20 +11,18 @@ import { PanierComponent } from './pages/panier/panier.component';
 
 const routes: Routes = [
 
- {
-  path: '', component: ClayoutComponent, children: [
+  {
+    path: '', component: ClayoutComponent, children: [
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
 
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'home', component: HomeComponent },
+      { path: 'details/:id', component: DetailsComponent }, //prends parametre
+      { path: 'catalogue', component: CatalogueComponent },
+      { path: 'panier', component: PanierComponent }/* ,
 
-    { path: 'home', component: HomeComponent },
-    { path: 'details', component: DetailsComponent },
-    { path: 'catalogue', component: CatalogueComponent },
-    { path: 'panier', component: PanierComponent  },
-
-    { path: '**' , component: NotFoundComponent}
-  ]
- }
-
+      { path: '**', component: NotFoundComponent } */
+    ]
+  }
 ];
 
 @NgModule({

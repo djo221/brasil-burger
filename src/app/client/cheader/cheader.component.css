@@ -12,3 +12,8 @@
   margin-left: 6rem;
 }
 
+.total-number-panier{
+  position: fixed;
+  transform: scale(2em);  /* ici à revoir  */
+  transform: translateX(2em);
+}
