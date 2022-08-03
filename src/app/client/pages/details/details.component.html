@@ -1,5 +1,4 @@
-<!-- {{detail|async|json}} -->
-
+<!--  {{detail|async|json}} -->
 <ng-container *ngIf="detail|async as detailProduit">
 
 <div class="title is-size-1 has-text-danger">
@@ -15,7 +14,7 @@
 
     <div class="middle-information">
       <img
-        src="{{detailProduit?.produit?.image}}"
+        src="data:image/png;base64,{{detailProduit?.produit?.image}}"
         alt=""
         class="image-details-commande"
       />

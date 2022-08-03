@@ -8,9 +8,9 @@ export const environment = {
   API_KEY: '16bf3be1d1msh32cfc0edbc754d8p1251e0jsnabe1ace1e839',
   API_HOST: 'burgers1.p.rapidapi.com',
 
-  CATALOGUE_URL: "http://localhost:3000/catalogues",
 
-  DETAIL_URL: "http://localhost:8000/details/1"
+  CATALOGUE_URL: "http://localhost:3000/catalogues",
+  DETAIL_URL: "https://127.0.0.1:8000/api/details"
  /*  PANIER_URL: "", */
 
 
