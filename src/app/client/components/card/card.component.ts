@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Produit } from '../../shared/models/produit';
 
 
@@ -11,7 +12,7 @@ import { Produit } from '../../shared/models/produit';
 export class CardComponent implements OnInit {
     @Input("produits") produit : Produit|null = null;
 
-  constructor() { }
+  constructor(private activated: ActivatedRoute) { }
 
   ngOnInit(): void {
   }

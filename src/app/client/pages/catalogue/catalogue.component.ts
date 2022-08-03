@@ -20,6 +20,8 @@ export class CatalogueComponent implements OnInit {
 
 
   ngOnInit(): void {
+
+    
    /*  this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data ) */
     this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data?.produits )
     //this.product = data.produits

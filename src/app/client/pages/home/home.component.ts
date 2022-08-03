@@ -8,6 +8,7 @@ import { Catalogue } from '../../shared/models/catalogue';
 import { Produit } from '../../shared/models/produit';
 import { CatalogueService } from '../../shared/services/catalogue.service';
 import { Router } from '@angular/router';
+import { DetailService } from '../../shared/services/detail.service';
 
 @Component({
   selector: 'app-home',
@@ -31,15 +32,17 @@ export class HomeComponent implements OnInit {
     private http: HttpClient,
     public burgerApiService: BurgerApiService,
     private CatalogueService: CatalogueService,
-    private Router: Router
+    private Router: Router,
+    private DetailService : DetailService
   ) { }
 
 
   title = 'api-angular';
+  private detail: any;
 
   ngOnInit(): void {
 
-
+   
     /* //call api exterieur (rapidapi pour burger)
     let headers = new HttpHeaders({
       'x-rapidapi-host': 'burgers1.p.rapidapi.com',
@@ -70,7 +73,7 @@ export class HomeComponent implements OnInit {
     )
   }
 
-  
+
 
 
 

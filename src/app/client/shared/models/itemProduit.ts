@@ -1,8 +1,8 @@
-export interface Produit {
+import { Produit } from "./produit"
+
+export interface ItemProduit {
   id?:number
-  nom:string
-  image:string
-  prix?:number
-  type?: string
-  description?: string
+  produit?: Produit
+  boisson? :  []
+  portionFrite?: []
 }

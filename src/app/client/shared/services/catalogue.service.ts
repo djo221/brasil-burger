@@ -11,7 +11,9 @@ import { Catalogue } from '../models/catalogue';
 
 export class CatalogueService {
 
-  private url = "http://localhost:3000/catalogue";
+  private url = "https://127.0.0.1:8000/api/catalogues";
+
+
 
 
   constructor(private http:HttpClient) {

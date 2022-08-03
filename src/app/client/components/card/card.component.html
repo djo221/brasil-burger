@@ -7,7 +7,7 @@
           <span class="card-title ">{{produit?.nom}}</span>
       </div>
       <div class="d-grid gap-2">
-        <span [routerLink]="['/details']"  class="btn btn-danger gap-3 ">COMMANDER</span>
+        <span routerLink="/details/{{ produit?.id }}"  class="btn btn-danger gap-3 ">COMMANDER</span>
        </div>
   </div>
 </div>

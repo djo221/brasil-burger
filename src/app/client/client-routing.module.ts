@@ -16,7 +16,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
 
       { path: 'home', component: HomeComponent },
-      { path: 'details/:id', component: DetailsComponent }, //prends parametre
+      { path: 'details/:did', component: DetailsComponent }, //prends parametre did : premier lettre du composant + id
       { path: 'catalogue', component: CatalogueComponent },
       { path: 'panier', component: PanierComponent }/* ,
 

@@ -1,5 +1,9 @@
+<!-- {{detail|async|json}} -->
+
+<ng-container *ngIf="detail|async as detailProduit">
+
 <div class="title is-size-1 has-text-danger">
-  <h1 class="has-text-centered">BURGER SIMPLE</h1>
+  <h1 class="has-text-centered">{{detailProduit?.produit?.nom}}</h1>
 </div>
 <section class="section section-info-principal">
   <div class="row row-info">
@@ -11,7 +15,7 @@
 
     <div class="middle-information">
       <img
-        src="../assets/img/image-menu-details.png"
+        src="{{detailProduit?.produit?.image}}"
         alt=""
         class="image-details-commande"
       />
@@ -19,7 +23,7 @@
 
     <div class="price-information">
       <div class="prix-item bg-dark">
-        <h1 class="is-size-1">1500 FCFA</h1>
+        <h1 class="is-size-1">{{detailProduit.produit?.prix}} FCFA</h1>
       </div>
     </div>
 
@@ -72,3 +76,4 @@
   <h1 class="title">Autres</h1>
   <h2 class="subtitle">Choisir un autres types de boisson</h2>
 </section>
+</ng-container>
