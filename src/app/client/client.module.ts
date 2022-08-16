@@ -16,9 +16,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { ClayoutComponent } from './clayout/clayout.component';
 import { CheaderComponent } from './cheader/cheader.component';
 import { CfooterComponent } from './cfooter/cfooter.component';
+import { CardTabsComponent } from './components/card-tabs/card-tabs.component';
+import { ListerComplementsComponent } from './components/lister-complements/lister-complements.component';
+import { BouttonQuantityComponent } from './components/boutton-quantity/boutton-quantity.component';
+import { CartStatusComponentComponent } from './components/cart-status-component/cart-status-component.component';
+import { ListerProduitPanierComponent } from './components/onents/lister-produit-panier/lister-produit-panier.component';
+import { RouterModule } from '@angular/router';
+import { ListePanierComponent } from './pages/liste-panier/liste-panier.component';
 
 
-
+import { BrowserAnimationsModule }
+from '@angular/platform-browser/animations';
+import { TabsModule} from 'ngx-bootstrap/tabs'
 
 
 
@@ -36,12 +45,22 @@ import { CfooterComponent } from './cfooter/cfooter.component';
     ClayoutComponent,
     CheaderComponent,
     CfooterComponent,
-
+    CardTabsComponent,
+    ListerComplementsComponent,
+    BouttonQuantityComponent,
+    CartStatusComponentComponent,
+    ListerProduitPanierComponent,
+    ListePanierComponent,
   ],
   imports: [
     CommonModule,
     ClientRoutingModule,
-    HttpClientModule // ajouter l'appel à l'API dans n'importe quel composant de l'application
+    RouterModule,
+    HttpClientModule ,
+    TabsModule.forRoot()// ajouter l'appel à l'API dans n'importe quel composant de l'application
+  ],
+  exports:[
+    ListerProduitPanierComponent
   ]
 })
 export class ClientModule { }

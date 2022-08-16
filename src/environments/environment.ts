@@ -10,11 +10,8 @@ export const environment = {
 
 
   CATALOGUE_URL: "http://localhost:3000/catalogues",
-  DETAIL_URL: "https://127.0.0.1:8000/api/details"
- /*  PANIER_URL: "", */
-
-
-
+  DETAIL_URL: "https://127.0.0.1:8000/api/details",
+  LOGIN_URL: "https://127.0.0.1:8000/api/login_check"
 
 
 };

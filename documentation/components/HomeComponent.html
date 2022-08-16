@@ -1,0 +1,782 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>brasil-burger documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">brasil-burger documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  HomeComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/client/pages/home/home.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-home</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./home.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./home.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#burgerApiService" >burgerApiService</a>
+                            </li>
+                            <li>
+                                <a href="#catalogue" >catalogue</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#detail" >detail</a>
+                            </li>
+                            <li>
+                                <a href="#product" >product</a>
+                            </li>
+                            <li>
+                                <a href="#title" >title</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getBurger" >getBurger</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(http: <a href="https://angular.io/api/common/http/HttpClient" target="_blank">HttpClient</a>, burgerApiService: <a href="../injectables/BurgerApiService.html" target="_self">BurgerApiService</a>, CatalogueService: <a href="../injectables/CatalogueService.html" target="_self">CatalogueService</a>, Router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, DetailService: <a href="../injectables/DetailService.html" target="_self">DetailService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/client/pages/home/home.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/http/HttpClient" target="_blank" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>burgerApiService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/BurgerApiService.html" target="_self" >BurgerApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>CatalogueService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CatalogueService.html" target="_self" >CatalogueService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>Router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>DetailService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DetailService.html" target="_self" >DetailService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBurger"></a>
+                    <span class="name">
+                        <span ><b>getBurger</b></span>
+                        <a href="#getBurger"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBurger()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/client/pages/home/home.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/client/pages/home/home.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="burgerApiService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>burgerApiService</b></span>
+                        <a href="#burgerApiService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/BurgerApiService.html" target="_self" >BurgerApiService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/client/pages/home/home.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="catalogue"></a>
+                    <span class="name">
+                        <span ><b>catalogue</b></span>
+                        <a href="#catalogue"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Catalogue.html" target="_self" >Catalogue | undefined</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/client/pages/home/home.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="detail"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>detail</b></span>
+                        <a href="#detail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/client/pages/home/home.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="product"></a>
+                    <span class="name">
+                        <span ><b>product</b></span>
+                        <a href="#product"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/client/pages/home/home.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="title"></a>
+                    <span class="name">
+                        <span ><b>title</b></span>
+                        <a href="#title"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;api-angular&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/client/pages/home/home.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Input, OnInit } from &#x27;@angular/core&#x27;;
+import { Observable, of } from &#x27;rxjs&#x27;;
+
+
+import { HttpClient, HttpHeaders } from &#x27;@angular/common/http&#x27;;
+import { BurgerApiService } from &#x27;../../shared/services/burger-api.service&#x27;;
+import { Catalogue } from &#x27;../../shared/models/catalogue&#x27;;
+import { Produit } from &#x27;../../shared/models/produit&#x27;;
+import { CatalogueService } from &#x27;../../shared/services/catalogue.service&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { DetailService } from &#x27;../../shared/services/detail.service&#x27;;
+
+@Component({
+  selector: &#x27;app-home&#x27;,
+  templateUrl: &#x27;./home.component.html&#x27;,
+  styleUrls: [&#x27;./home.component.css&#x27;]
+})
+
+export class HomeComponent implements OnInit {
+
+  //produits$: Observable&lt;Catalogue&gt; | null &#x3D; null
+
+  catalogue: Catalogue | undefined
+
+  product: any
+
+
+
+  /*   posts$ : Observable&lt;Post[]&gt; | null &#x3D; null */
+
+  constructor(
+    private http: HttpClient,
+    public burgerApiService: BurgerApiService,
+    private CatalogueService: CatalogueService,
+    private Router: Router,
+    private DetailService : DetailService
+  ) { }
+
+
+  title &#x3D; &#x27;api-angular&#x27;;
+  private detail: any;
+
+  ngOnInit(): void {
+
+   
+    /* //call api exterieur (rapidapi pour burger)
+    let headers &#x3D; new HttpHeaders({
+      &#x27;x-rapidapi-host&#x27;: &#x27;burgers1.p.rapidapi.com&#x27;,
+      &#x27;x-rapidapi-key&#x27;: &#x27;16bf3be1d1msh32cfc0edbc754d8p1251e0jsnabe1ace1e839&#x27;
+    });
+    this.http
+      .get&lt;any&gt;(&#x27;https://burgers1.p.rapidapi.com/burgers&#x27;, {
+        headers: headers
+      })
+      .subscribe(data &#x3D;&gt; {
+        console.log(data);
+      }); */
+
+
+      this.CatalogueService.getCatalogue().subscribe((data) &#x3D;&gt; this.catalogue &#x3D; data)
+    }// end ngOninit
+
+
+
+  //fonction api exterieur
+  getBurger(): any {
+    this.burgerApiService.getBurger().subscribe(
+      data &#x3D;&gt; {
+        console.log(data);
+      }, err &#x3D;&gt; {
+        console.log(err)
+      }
+    )
+  }
+
+
+
+
+
+
+
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;hero is-large box&quot;&gt;
+  &lt;div class&#x3D;&quot;hero-body has-text-centered&quot;&gt;
+    &lt;p class&#x3D;&quot;title title-promotion&quot;&gt;
+      – 20% SUR TOUTE LA COLLECTION JUSQU’AU 10 AOUT. PROFITEZ-EN !
+    &lt;/p&gt;
+    &lt;button href&#x3D;&quot;#section-catalogue&quot; class&#x3D;&quot;button is-dark box-shadow is-medium&quot;&gt;COMMANDE RAPIDE&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;!-- section apres header --&gt;
+&lt;section class&#x3D;&quot;hero is-medium bg-dark&quot; id&#x3D;&quot;section-catalogue&quot;&gt;
+&lt;!-- &lt;img src&#x3D;&quot;../assets/img/menuhometextpng.png&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;image-home-details&quot; alt&#x3D;&quot;&quot; srcset&#x3D;&quot;&quot;&gt; --&gt;
+
+&lt;!-- texte en dessous les cards --&gt;
+&lt;div class&#x3D;&quot;row middle-text-home bg-white text-center&quot;&gt;
+  &lt;h1 class&#x3D;&quot;title&quot;&gt;VOYAGE ET DECOUVRE TOUTE NOTRE GAMME DE PRODUITS&lt;/h1&gt;
+  &lt;h2 class&#x3D;&quot;subtitle&quot;&gt;
+    Aucune excuse, faites-vous plaisir : il y en a pour tous les goûts !
+  &lt;/h2&gt;
+&lt;/div&gt;
+
+&lt;!-- les cards --&gt;
+
+&lt;!-- &lt;lister-catalogue class&#x3D;&quot;bg-primary&quot; [produits]&#x3D;&quot;catalogue?.produits&quot; &gt;&lt;/lister-catalogue&gt; --&gt;
+ &lt;lister-catalogue class&#x3D;&quot;bg-primary&quot; [produits]&#x3D;&quot;catalogue?.produits&quot; &gt;&lt;/lister-catalogue&gt;
+
+
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./home.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import url(&#x27;https://fonts.googleapis.com/css2?family&#x3D;Roboto&amp;family&#x3D;Rubik+Microbe&amp;family&#x3D;Mochiy+Pop+One&amp;display&#x3D;swap&#x27;);
+
+
+.hero {
+  background-image: url(&#x27;/assets/img/header-home-image.jpg&#x27;);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.title-promotion
+{
+ font-family: &#x27;Mochiy Pop One&#x27;, sans-serif;
+}
+
+.button{
+  margin-top: 2em;
+}
+
+.middle-text-home{
+  padding-top: 2em;
+}
+
+
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><section class="hero is-large box">  <div class="hero-body has-text-centered">    <p class="title title-promotion">      – 20% SUR TOUTE LA COLLECTION JUSQU’AU 10 AOUT. PROFITEZ-EN !    </p>    <button href="#section-catalogue" class="button is-dark box-shadow is-medium">COMMANDE RAPIDE</button>  </div></section><!-- section apres header --><section class="hero is-medium bg-dark" id="section-catalogue"><!-- <img src="../assets/img/menuhometextpng.png" alt="" class="image-home-details" alt="" srcset=""> --><!-- texte en dessous les cards --><div class="row middle-text-home bg-white text-center">  <h1 class="title">VOYAGE ET DECOUVRE TOUTE NOTRE GAMME DE PRODUITS</h1>  <h2 class="subtitle">    Aucune excuse, faites-vous plaisir : il y en a pour tous les goûts !  </h2></div><!-- les cards --><!-- <lister-catalogue class="bg-primary" [produits]="catalogue?.produits" ></lister-catalogue> --> <lister-catalogue class="bg-primary" [produits]="catalogue?.produits" ></lister-catalogue></section></div>'
+    var COMPONENTS = [{'name': 'AlayoutComponent', 'selector': 'app-alayout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AsideComponent', 'selector': 'app-aside'},{'name': 'BAddComponent', 'selector': 'app-b-add'},{'name': 'BDeleteComponent', 'selector': 'app-b-delete'},{'name': 'BEditComponent', 'selector': 'app-b-edit'},{'name': 'BIndexComponent', 'selector': 'app-b-index'},{'name': 'BouttonQuantityComponent', 'selector': 'app-boutton-quantity'},{'name': 'CardComponent', 'selector': 'app-card'},{'name': 'CardTabsComponent', 'selector': 'app-card-tabs'},{'name': 'CartStatusComponentComponent', 'selector': 'app-cart-status-component'},{'name': 'CatalogueComponent', 'selector': 'app-catalogue'},{'name': 'CfooterComponent', 'selector': 'app-cfooter'},{'name': 'CheaderComponent', 'selector': 'app-cheader'},{'name': 'ClayoutComponent', 'selector': 'app-clayout'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DetailsComponent', 'selector': 'app-details'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListePanierComponent', 'selector': 'app-liste-panier'},{'name': 'ListerComplementsComponent', 'selector': 'app-lister-complements'},{'name': 'ListerProduitPanierComponent', 'selector': 'app-lister-produit-panier'},{'name': 'ListerProduitPanierComponent', 'selector': 'app-lister-produit-panier'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'LogoutComponent', 'selector': 'app-logout'},{'name': 'NotFoundComponent', 'selector': 'app-not-found'},{'name': 'NotFoundErrorComponent', 'selector': 'app-not-found-error'},{'name': 'PanierComponent', 'selector': 'app-panier'},{'name': 'SectionListerComponent', 'selector': 'lister-catalogue'},{'name': 'SidemenuComponent', 'selector': 'app-sidemenu'},{'name': 'UAddComponent', 'selector': 'app-u-add'},{'name': 'UDeleteComponent', 'selector': 'app-u-delete'},{'name': 'UEditComponent', 'selector': 'app-u-edit'},{'name': 'UIndexComponent', 'selector': 'app-u-index'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'HomeComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'HomeComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Produit } from '../../shared/models/produit';
+import { CartBetaService } from '../../shared/services/cart-beta.service';
 
 @Component({
   selector: 'app-panier',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PanierComponent implements OnInit {
 
-  constructor() { }
+  produits: Produit[]|undefined=[]
+
+  constructor(private serviceBeta : CartBetaService) { }
+
+  item$ = this.serviceBeta.item$
 
   ngOnInit(): void {
+
   }
 
 }

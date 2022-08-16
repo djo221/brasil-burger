@@ -1,0 +1,9 @@
+.form_container
+{
+  display: grid;
+  justify-content: center;
+}
+.form_error
+{
+  color: red;
+}

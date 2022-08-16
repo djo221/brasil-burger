@@ -20,19 +20,16 @@ export class CatalogueComponent implements OnInit {
 
 
   ngOnInit(): void {
-
-    
-   /*  this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data ) */
     this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data?.produits )
-    //this.product = data.produits
   }
 
 
   goTopage(type: string) {
-    //this.router.navigate([`${pageName}`]);
+    this.CatalogueService.getCatalogue()
+    .subscribe((data) => this.catalogue = data?.produits?.filter(prod => prod['@type'] == type) )
 
-    this.CatalogueService.getCatalogue().subscribe((data) => this.catalogue = data?.produits?.filter(prod => prod.type == type) )
-
+    console.log('test ===> '
+    + this.CatalogueService.getCatalogue().subscribe((data) =>console.log(data?.produits) ) )
   }
 
 }

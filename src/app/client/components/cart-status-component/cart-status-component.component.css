@@ -1,0 +1,40 @@
+.cart-area
+{
+  display: flex;
+  font-size: 1.3em;
+  margin: 1% 0.2em;
+  padding-top: 1%;
+}
+.total{
+  margin-top: 1%;
+  display: flex;
+  border-radius: 8px;
+  column-gap: 0.3em;
+  background-color: red;
+  padding: 1%;
+}
+.prix-qnt{
+
+}
+
+.prix{
+  padding-top: 4%;
+  color: #fff;
+}
+
+.quantite
+{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 3%;
+  font-size: 1em;
+  color: #fff;
+  padding-top: 4%;
+}
+
+.panier{
+ margin-left: 0.5em;
+ transform: translateY(0.3em);
+ transform: scale(1.4);
+ margin-top: 0.2em;
+}

@@ -1,14 +1,18 @@
 <div class="card-produit box" >
   <div class="bg-danger text-center p-3">
-    <strong class="h4 text-white font-weight-bold ">{{produit?.prix}} FCFA</strong>
+    <strong class="h4 text-white font-weight-bold ">{{produit?.prix | currency : 'FCFA' }}</strong>
   </div>
   <div class="card shadow-sm"> <img src="data:image/PNG;base64,{{produit?.image}}" class="card-img-top" alt="...">
       <div class="card-body text-center has-text-weight-bold">
           <span class="card-title ">{{produit?.nom}}</span>
       </div>
       <div class="d-grid gap-2">
-        <span routerLink="/details/{{ produit?.id }}"  class="btn btn-danger gap-3 ">COMMANDER</span>
+        <span  class="btn bg-warning gap-3"  (click)="addToCart(produit!)" >ajout panier<i class="bi bi-basket m-1"></i></span>
+       </div>
+      <div class="d-grid gap-2">
+        <span routerLink="/details/{{ produit?.id }}"  class="btn btn-info gap-3 ">COMMANDER</span>
        </div>
   </div>
 </div>
+
 

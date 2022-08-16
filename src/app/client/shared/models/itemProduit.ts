@@ -1,8 +1,8 @@
-import { Produit } from "./produit"
+import { Produit, ProduitDetail } from "./produit"
 
 export interface ItemProduit {
-  id?:number
-  produit?: Produit
-  boisson? :  []
-  portionFrite?: []
+  id:number
+  produit:  ProduitDetail
+  boisson? :  Produit[]
+  portionFrite?: Produit[]
 }

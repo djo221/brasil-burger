@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartBetaService } from '../shared/services/cart-beta.service';
 
 
 @Component({
@@ -8,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private serviceBeta: CartBetaService) { }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { map, Observable, tap } from 'rxjs';
 
 import { environment } from 'src/environments/environment';
 import { ItemProduit } from '../models/itemProduit';
@@ -19,7 +19,9 @@ export class DetailService {
 
    getItem(did : any) : Observable<ItemProduit>{
      // console.log(" in the function itemProduit")
-     return this.http.get<any>(API_URL+'/'+did)
+     return this.http.get<ItemProduit>(API_URL+'/'+did).pipe(
+             tap(console.log)
+     )
     }
 
 

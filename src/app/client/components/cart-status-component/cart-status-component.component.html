@@ -1,0 +1,9 @@
+<div class="cart-area d-n">
+  <a [routerLink]="['panier']" class="prix-qnt d-flex">
+    <div class="total">
+      <span class="prix"> {{totalPrice | currency : 'FCFA'}} </span>
+      <span class="quantite bg-dark"> {{totalQuantity}} </span>
+    </div>
+    <i class="bi bi-cart panier"  ></i>
+  </a>
+</div>

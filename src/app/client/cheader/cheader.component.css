@@ -17,3 +17,15 @@
   transform: scale(2em);  /* ici à revoir  */
   transform: translateX(2em);
 }
+.bi-house-heart-fill
+{
+  display: flex;
+  align-items: center;
+  transform: scale(2.5 );
+  padding-right: 1em;
+  margin: 0;
+}
+.btn-decouvrez-menu{
+  padding: 2;
+  margin: 0;
+}

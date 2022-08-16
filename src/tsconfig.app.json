@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.json",
+  "exclude": [
+     //exclure les fichiers dont on a pas besoin
+    "src/test.ts",
+    "**/*.spect.ts"
+  ],
+  "include": [
+    // regarder les fichiers ts qu'il y a dans le src
+    "../src/*.ts",
+    "../src/**/*.ts"
+  ]
+}

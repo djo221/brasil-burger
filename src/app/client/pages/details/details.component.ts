@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { ItemProduit } from '../../shared/models/itemProduit';
 import { Produit } from '../../shared/models/produit';
+import { CartBetaService } from '../../shared/services/cart-beta.service';
 import { DetailService } from '../../shared/services/detail.service';
 
 @Component({
@@ -11,26 +12,29 @@ import { DetailService } from '../../shared/services/detail.service';
   styleUrls: ['./details.component.css']
 })
 export class DetailsComponent implements OnInit {
-@Input() produit:Produit|null=null
 
 
 
-  detail :Observable<ItemProduit>| null=null
+  detail$ :Observable<ItemProduit>| undefined = undefined
 
 
 
-  constructor( private activated: ActivatedRoute , private service:DetailService ) { }
+  constructor( private activated: ActivatedRoute , private service:DetailService , private cartServiceBeta: CartBetaService  ) { }
+
+/*   item$ : Observable<any> = this.cartServiceBeta.item$; */
 
   ngOnInit(): void {
     let detailId = this.activated.snapshot.paramMap.get('did')
+    this.detail$= this.service.getItem(detailId)
+   /*  this.item$.subscribe(
+      value => console.log(value , 'value de item$')
+    ) */
+  }
 
-    this.detail= this.service.getItem(detailId)
-
-
-    //this.detail.subscribe()
-    //ici on se branche sur le canal par lequel va passer les données
-    //this.detail=this.service.getItem()
-    /* this.DetailService.getItem().subscribe((data) => this.item = data) */
+  addToCart(produit: Produit) {
+    this.cartServiceBeta.addToCart(produit)
   }
 
 }
+
+/*  this.cartServiceBeta.addItem(produit) */
